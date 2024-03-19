@@ -1,8 +1,8 @@
 describe('Покупка аватара', function () {
     it('e2e тест на покупку нового аватара для тренера', function () {
          cy.visit('https://pokemonbattle.me/');
-         cy.get(':nth-child(1) > .auth__input').type('prod@red.ru');
-         cy.get('#password').type('123456PROD');
+         cy.get(':nth-child(1) > .auth__input').type('lexa.pirozhkov@yandex.ru');
+         cy.get('#password').type('Manchester1998');
          cy.get('.auth__button').click();
          cy.get('.header__btns > [href="/shop"]').click();
          cy.get(':nth-child(7) > .shop__button').click();
